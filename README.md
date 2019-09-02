@@ -1,2 +1,2 @@
 # logstash-wireshark-tlsnames
-Get wireshark tls logs to elasticsearch with logstash
+Get wireshark tls logs in JSON format to elasticsearch with logstash
