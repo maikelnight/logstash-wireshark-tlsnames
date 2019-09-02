@@ -1,0 +1,1 @@
+TLSNAMES {"timestamp".*"(%{GREEDYDATA:timestamp})".*"layers".*{"ssl_handshake_extensions_server_name".*\["%{GREEDYDATA:sni}"\].*"ip_src".*\["%{IP:ip_src}"\].*"ip_dst".*\["%{IP:ip_dst}"\].*"frame_time".*\["%{GREEDYDATA:frametime}"\].*
