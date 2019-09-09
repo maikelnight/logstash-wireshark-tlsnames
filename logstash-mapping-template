@@ -1,0 +1,22 @@
+{
+    "template" : "tlsnames-*",
+    "order" : 1,
+    "settings" : {
+        "number_of_shards" : 2,
+        "index.refresh_interval" : "90s"
+    },
+    "mappings" : {
+        "tlsnames" : {
+            "properties" : {
+                "timestamp" : { "index": "true", "doc_values": true, "type" : "keyword" },
+                "frametime" : { "index": "true", "doc_values": true, "type" : "keyword" },
+                "host" : { "index": "true", "doc_values": true, "type" : "keyword" },
+                "ip_dst" : { "index": "true", "doc_values": true, "type" : "keyword" },
+                "ip_src" : { "index": "true", "doc_values": true, "type" : "keyword" },
+                "sni" : { "index": "true", "doc_values": true, "type" : "keyword" },
+                "frametime" : { "index": "true", "doc_values": true, "type" : "keyword" },
+                "@timestamp" : { "format" : "dateOptionalTime", "type" : "date" }
+            }
+        }
+    }
+}
